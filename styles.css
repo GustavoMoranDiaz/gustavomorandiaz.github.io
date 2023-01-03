@@ -1,0 +1,39 @@
+body {
+    background-color:#D9BEA7;
+    font-family: Lora, serif;
+    margin: 0;
+}
+.circleCrop {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20%;
+    position: relative;
+    margin:auto;
+}
+.headerDiv{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    display: inline;
+    scale: 1.6;
+    object-position: -17px -130px;
+}
+h1 {
+    color:rgb(0, 0, 0);
+    font-family: Ubuntu, sans-serif;
+}
+h2 {
+    color:rgb(0, 0, 0);
+    clear:both;
+}
+p {
+    color:rgb(0, 0, 0);
+    font-size: larger;
+    clear:both;
+}
