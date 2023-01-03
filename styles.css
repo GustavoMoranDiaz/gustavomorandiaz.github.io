@@ -37,3 +37,19 @@ p {
     font-size: larger;
     clear:both;
 }
+a{
+    color:#3687f1;
+    text-decoration: none;
+}
+a:visited{
+    color:#864487;
+    text-decoration: none;
+}
+a:hover{
+    color: #5a90d7;
+    text-decoration: none;
+}
+a:active{
+    color:#295287;
+    text-decoration: none;
+}
