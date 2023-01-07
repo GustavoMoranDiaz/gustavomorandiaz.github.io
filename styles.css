@@ -11,12 +11,12 @@ body {
     position: relative;
     margin:auto;
 }
-.headerDiv{
+#headerDiv{
     padding: 50px;
     text-align: center;
     background-color: white;
 }
-img {
+#headerDiv img {
     object-fit: cover;
     width: 500px;
     height: 500px;
@@ -61,6 +61,50 @@ svg{
     width:auto;
 }
 #contactInfo{
+    clear: both;
+    font-family: 'Ubuntu', sans-serif;
     padding-top: 1in;
     text-align: center;
 }
+.flexwrapper{
+    display:flex;
+}
+#Projects h2{
+    padding-left: 35px;
+    padding-top: 10px;
+}
+#Projects ul{
+    margin: 30px 0px;
+}
+#Projects li{
+    border-left:5px solid #F25835;
+    padding:20px;
+}
+#Projects li:hover{
+    cursor: pointer;
+    border-left:10px solid #F25835;
+    transition-timing-function: linear;
+    transition: border-left 300ms;
+}
+#AutoRobot122list{
+    float: left;
+    width:fit-content;
+    height: fit-content;
+}
+#AutoRobot122desc{
+    float: right;
+    text-align: justify;
+}
+#AutoRobot122desc{
+    width: 100%;
+}
+#AutoRobot122desc p{
+    word-wrap:normal;
+}
+#AutoRobot122desc img{
+    float: left;
+    height: 300px;
+    width: auto;
+    padding-right: 30px;
+}
+
