@@ -68,6 +68,9 @@ svg{
 }
 .flexwrapper{
     display:flex;
+    margin:10px;
+    padding-bottom: 20px;
+    border-bottom:5px dotted #F25835;
 }
 #Projects h2{
     padding-left: 35px;
@@ -93,18 +96,16 @@ svg{
 }
 #AutoRobot122desc{
     float: right;
-    text-align: justify;
-}
-#AutoRobot122desc{
+    align-content: center;
     width: 100%;
 }
 #AutoRobot122desc p{
     word-wrap:normal;
+    font-size:x-large;
+    font-family: 'Open Sans', serif;
 }
 #AutoRobot122desc img{
-    float: left;
-    height: 300px;
+    height: 350px;
     width: auto;
     padding-right: 30px;
 }
-

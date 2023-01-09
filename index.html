@@ -20,27 +20,55 @@
         <script>
             function AutoRobot122update(n){
                 if(n==0){
-                    document.getElementById('AutoRobot122img').src = "images/AutoRobotFinal.png";
+                    document.getElementById('AutoRobot122p').innerHTML = 'This autonomous robot was made in a group of three for the class ENGR 122 - "Field Sustainable Systems with Sensors". The project required us to create a robot to traverse an obstacle course (middle photo) with no external control. In order to construct this robot, a litany of tools were used including 3D printers and Solidworks for the chassis, soldering stations, ultrasonic sensors, and an AVR microcontroller for the electronics, and Arduino IDE, C++, and an external web server for LiDAR position data for the onboard logic of the robot. To view a full report on the project click <a target="_blank" href="documents/AutoRobot122Report.pdf">here</a>';
+                    document.getElementById('AutoRobot122imga').src = "images/AutoRobotFinal.png";
+                    document.getElementById('AutoRobot122imgb').src = "images/122coursemap.png";
+                    document.getElementById('AutoRobot122imgc').src = "images/photooflidar.png";
                 }
                 if(n==1){
-                    document.getElementById('AutoRobot122img').src = "images/exploded.png";
+                    document.getElementById('AutoRobot122p').innerHTML = 'The electronic components consisted of an AVR microcontroller with WiFi capabilities (via an esp8266 module), three ultrasonic sensors, an oled panel, a motor controller to control the two motors, and a battery. Almost all components are at some point connected to a shield (pictured in the 2nd image) either to make for easier connections to other components or to allow the header pins to be visible even with the 3D printed chassis.';
+                    document.getElementById('AutoRobot122imga').src = "images/wiringDiagram.png";
+                    document.getElementById('AutoRobot122imgb').src = "images/shieldWiring.png";
+                    document.getElementById('AutoRobot122imgc').src = "images/birdseye122.png";
                 }
+                if(n==2){
+                    document.getElementById('AutoRobot122p').innerHTML = 'The logic controlling the robot’s movement comes down to reading LiDAR data using WiFi to find out where the robot is on the obstacle course as well as checking to see if a target was hit and reading ultrasonic sensor data to ensure no crashes into walls or obstacles. Pictured below are two flow charts that detail the checks done while the robot runs. Also pictured is a small code snippet showcasing how the robot is able to detect its distance from targets and how the robot checks if it hit a target. For a detailed explanation of more code please reference the report in the “Project Overview” section.';
+                    document.getElementById('AutoRobot122imga').src = "images/122basiclogicoverview.png";
+                    document.getElementById('AutoRobot122imgb').src = "images/122detailedoverview.png";
+                    document.getElementById('AutoRobot122imgc').src = "images/122codesnip.png";
+                }
+                if(n==3){
+                    document.getElementById('AutoRobot122p').innerHTML = 'All CAD modeling was done on Solidworks, slicing was done using Flashprint, and all 3D printing was done using a FlashForge Finder printer. Size constraints were very important to our team when designing so we decided to try to make our design as compact as possible by making the print out of two parts that stack on top of eachother. This kept our horizontal dimensions smaller. Furthermore, plenty of routing holes had to be included into the design to allow for our wires to connect to every component.';
+                    document.getElementById('AutoRobot122imga').src = "images/exploded.png";
+                    document.getElementById('AutoRobot122imgb').src = "images/122chassistop.png";
+                    document.getElementById('AutoRobot122imgc').src = "images/122chassisbottom.png";
+                }
+                if(n==4){
+                    document.getElementById('AutoRobot122p').innerHTML = 'To see a short video of the robot moving and navigating, click <a target="_blank" href="https://youtu.be/UVfak_GDj08">here</a>';
+                    document.getElementById('AutoRobot122imga').src = "";
+                    document.getElementById('AutoRobot122imgb').src = "";
+                    document.getElementById('AutoRobot122imgc').src = "";
+                } 
             }
         </script>
         <h2>Autonomous Robot | 2022</h2>
         <div class="flexwrapper">
         <div id="AutoRobot122list">
             <ul type="none">
-                <li onmouseup="AutoRobot122update(0)"><span id="ARdevMethod">Development Methods Used</span></li>
+                <li onmouseup="AutoRobot122update(0)"><span>Project Overview</span></li>
                 <li onmouseup="AutoRobot122update(1)"><span>Electrical System</span></li>
-                <li><span>Steering Logic</span></li>
-                <li><span>3D Printing & Assembly</span></li>
-                <li><span>Robot in Action!</span></li>
+                <li onmouseup="AutoRobot122update(2)"><span>Steering Logic</span></li>
+                <li onmouseup="AutoRobot122update(3)"><span>3D Printing & Assembly</span></li>
+                <li onmouseup="AutoRobot122update(4)"><span>Robot in Action!</span></li>
             </ul>
         </div>
         <div id="AutoRobot122desc">
-            <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <img id ="AutoRobot122img" src="images/AutoRobotFinal.png">
+            <p id="AutoRobot122p" align="left">
+                This autonomous robot was made in a group of three for the class ENGR 122 - "Field Sustainable Systems with Sensors". The project required us to create a robot to traverse an obstacle course (2nd photo) with no external control. In order to construct this robot, a litany of tools were used including 3D printers and Solidworks for the chassis, soldering stations, ultrasonic sensors, and an AVR microcontroller for the electronics, and Arduino IDE, C++, and an external web server for LiDAR position data for the onboard logic of the robot. To view a full report on the project click <a target="_blank" href="documents/AutoRobot122Report.pdf">here</a>
+            </p>
+                <img id="AutoRobot122imga" src="images/AutoRobotFinal.png">
+                <img id="AutoRobot122imgb" src="images/122coursemap.png">
+                <img id="AutoRobot122imgc" src="images/photooflidar.png">
         </div>
         </div>
     </div>
